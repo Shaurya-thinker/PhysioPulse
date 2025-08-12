@@ -1,0 +1,296 @@
+[
+  {
+    "frame": 10,
+    "timestamp_sec": 0.4,
+    "left_arm": {
+      "angle": 14.883452511373521,
+      "score": 50,
+      "feedback": "Bend your left arm more"
+    },
+    "right_arm": {
+      "angle": 29.406552977036984,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 15,
+    "timestamp_sec": 0.6,
+    "left_arm": {
+      "angle": 169.24609827812384,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 149.30017375420456,
+      "score": 75,
+      "feedback": "Almost there (right arm)"
+    }
+  },
+  {
+    "frame": 35,
+    "timestamp_sec": 1.4,
+    "left_arm": {
+      "angle": 120.22527625502323,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 99.95226274000271,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 40,
+    "timestamp_sec": 1.6,
+    "left_arm": {
+      "angle": 102.33306752354986,
+      "score": 50,
+      "feedback": "Bend your left arm more"
+    },
+    "right_arm": {
+      "angle": 138.70328556549336,
+      "score": 75,
+      "feedback": "Almost there (right arm)"
+    }
+  },
+  {
+    "frame": 50,
+    "timestamp_sec": 2.0,
+    "left_arm": {
+      "angle": 157.97325225284055,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 167.17870912530913,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 55,
+    "timestamp_sec": 2.2,
+    "left_arm": {
+      "angle": 155.12473521349904,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 172.28526686680755,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 60,
+    "timestamp_sec": 2.4,
+    "left_arm": {
+      "angle": 156.06903136333125,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 168.35024461007774,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 65,
+    "timestamp_sec": 2.6,
+    "left_arm": {
+      "angle": 140.51862927592856,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 174.62949443685505,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 70,
+    "timestamp_sec": 2.8,
+    "left_arm": {
+      "angle": 133.88459064657653,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 170.44294537711247,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 75,
+    "timestamp_sec": 3.0,
+    "left_arm": {
+      "angle": 144.55331325922523,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 124.9373529326931,
+      "score": 75,
+      "feedback": "Almost there (right arm)"
+    }
+  },
+  {
+    "frame": 80,
+    "timestamp_sec": 3.2,
+    "left_arm": {
+      "angle": 153.2636591323332,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 57.10408096244363,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 85,
+    "timestamp_sec": 3.4,
+    "left_arm": {
+      "angle": 141.67836618239645,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 41.10374455306591,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 90,
+    "timestamp_sec": 3.6,
+    "left_arm": {
+      "angle": 154.67489903788686,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 27.244453901817323,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 95,
+    "timestamp_sec": 3.8,
+    "left_arm": {
+      "angle": 155.1594438374149,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 14.481257463392224,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 100,
+    "timestamp_sec": 4.0,
+    "left_arm": {
+      "angle": 135.17424291041365,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 3.3874642986571666,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 105,
+    "timestamp_sec": 4.2,
+    "left_arm": {
+      "angle": 140.10383767986804,
+      "score": 75,
+      "feedback": "Almost there (left arm)"
+    },
+    "right_arm": {
+      "angle": 18.59273419198328,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 110,
+    "timestamp_sec": 4.4,
+    "left_arm": {
+      "angle": 40.311347216554445,
+      "score": 50,
+      "feedback": "Bend your left arm more"
+    },
+    "right_arm": {
+      "angle": 106.71259280324767,
+      "score": 50,
+      "feedback": "Bend your right arm more"
+    }
+  },
+  {
+    "frame": 115,
+    "timestamp_sec": 4.6,
+    "left_arm": {
+      "angle": 169.22893778505443,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 173.16026592559132,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 120,
+    "timestamp_sec": 4.8,
+    "left_arm": {
+      "angle": 176.33321649501593,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 176.2268819793194,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 125,
+    "timestamp_sec": 5.0,
+    "left_arm": {
+      "angle": 173.57060690274903,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 169.9860043307247,
+      "score": 100,
+      "feedback": "Perfect right arm extension"
+    }
+  },
+  {
+    "frame": 130,
+    "timestamp_sec": 5.2,
+    "left_arm": {
+      "angle": 167.86561273741592,
+      "score": 100,
+      "feedback": "Perfect left arm extension"
+    },
+    "right_arm": {
+      "angle": 145.66016285107324,
+      "score": 75,
+      "feedback": "Almost there (right arm)"
+    }
+  }
+]
