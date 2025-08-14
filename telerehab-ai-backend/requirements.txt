@@ -1,0 +1,40 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+
+# Computer Vision and AI
+opencv-python==4.8.1.78
+# mediapipe==0.10.7  # Not compatible with Python 3.13
+numpy==1.24.3
+
+# Data processing
+pandas==2.1.4
+scipy==1.11.4
+
+# Utilities
+python-dotenv==1.0.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Firebase (for future integration)
+firebase-admin==6.2.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Logging and monitoring
+structlog==23.2.0
+
+# Security
+cryptography==41.0.8

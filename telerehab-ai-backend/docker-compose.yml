@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  physiopulse:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=false
+      - HOST=0.0.0.0
+      - PORT=8000
+      - UPLOAD_DIR=input_videos
+      - OUTPUT_DIR=output_data
+      - TEMP_DIR=temp
+      - MAX_VIDEO_SIZE_MB=100
+      - FRAME_SKIP=5
+      - POSE_CONFIDENCE_THRESHOLD=0.5
+      - POSE_TRACKING_CONFIDENCE=0.5
+      - SECRET_KEY=your-secret-key-change-in-production
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    volumes:
+      - ./input_videos:/app/input_videos
+      - ./output_data:/app/output_data
+      - ./logs:/app/logs
+      - ./temp:/app/temp
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis for caching and session management (optional)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # PostgreSQL for persistent storage (optional)
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: physiopulse
+      POSTGRES_USER: physiopulse
+      POSTGRES_PASSWORD: physiopulse_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # Nginx for load balancing and reverse proxy (optional)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - physiopulse
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  postgres_data:
