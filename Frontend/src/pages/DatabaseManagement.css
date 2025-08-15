@@ -1,0 +1,559 @@
+/* Database Management Page Styles */
+.database-container {
+  padding: 16px 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, var(--accent-color, #764ba2) 100%);
+  transition: background 0.3s ease;
+}
+
+body.dark-theme .database-container {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Header Section */
+.database-header-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+body.dark-theme .database-header-card {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(51, 65, 85, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.database-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.database-header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.database-header-icon {
+  font-size: 24px !important;
+  color: var(--primary-color, #667eea) !important;
+  transition: color 0.3s ease;
+}
+
+.database-title {
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin: 0 !important;
+  font-size: 1.25rem !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body.dark-theme .database-title {
+  color: #f1f5f9 !important;
+}
+
+.database-subtitle {
+  color: #64748b !important;
+  margin: 4px 0 0 0 !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+}
+
+body.dark-theme .database-subtitle {
+  color: #94a3b8 !important;
+}
+
+/* Controls Section */
+.database-controls-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+body.dark-theme .database-controls-card {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(51, 65, 85, 0.3) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.database-controls-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.database-search-field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.database-search-field .MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  background: rgba(248, 250, 252, 0.8) !important;
+  transition: all 0.3s ease !important;
+  height: 40px !important;
+}
+
+body.dark-theme .database-search-field .MuiOutlinedInput-root {
+  background: rgba(30, 41, 59, 0.8) !important;
+}
+
+.database-search-icon {
+  color: #667eea !important;
+}
+
+.database-filter-control {
+  min-width: 150px;
+}
+
+.database-filter-control .MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  background: rgba(248, 250, 252, 0.8) !important;
+  height: 40px !important;
+}
+
+body.dark-theme .database-filter-control .MuiOutlinedInput-root {
+  background: rgba(30, 41, 59, 0.8) !important;
+}
+
+.database-results-count {
+  color: #64748b !important;
+  font-weight: 500 !important;
+  white-space: nowrap;
+  font-size: 0.875rem !important;
+}
+
+body.dark-theme .database-results-count {
+  color: #94a3b8 !important;
+}
+
+/* Patient List Section */
+.database-patients-section {
+  margin-bottom: 80px;
+}
+
+.database-list-container {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  overflow: hidden;
+}
+
+body.dark-theme .database-list-container {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(51, 65, 85, 0.3) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.database-list-item {
+  padding: 12px 16px !important;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5) !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 60px;
+}
+
+.database-list-item:last-child {
+  border-bottom: none !important;
+}
+
+.database-list-item:hover {
+  background: rgba(248, 250, 252, 0.7) !important;
+  transform: translateX(1px) !important;
+}
+
+body.dark-theme .database-list-item {
+  border-bottom: 1px solid rgba(51, 65, 85, 0.3) !important;
+}
+
+body.dark-theme .database-list-item:hover {
+  background: rgba(30, 41, 59, 0.5) !important;
+}
+
+.database-patient-info-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.database-patient-avatar-list {
+  width: 36px !important;
+  height: 36px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+}
+
+.database-patient-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.database-patient-name-list {
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  margin: 0 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.2 !important;
+}
+
+body.dark-theme .database-patient-name-list {
+  color: #f1f5f9 !important;
+}
+
+.database-patient-meta-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.database-patient-meta-list .MuiTypography-root {
+  color: #64748b !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+body.dark-theme .database-patient-meta-list .MuiTypography-root {
+  color: #94a3b8 !important;
+}
+
+.database-patient-meta-list .MuiChip-root {
+  height: 20px !important;
+  font-size: 0.625rem !important;
+  font-weight: 600 !important;
+}
+
+.database-patient-actions-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.database-action-btn-list {
+  padding: 4px !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  min-width: auto !important;
+}
+
+.database-action-btn-list.edit {
+  color: #059669 !important;
+  background: rgba(5, 150, 105, 0.1) !important;
+}
+
+.database-action-btn-list.edit:hover {
+  background: rgba(5, 150, 105, 0.15) !important;
+  transform: scale(1.05) !important;
+}
+
+.database-action-btn-list.delete {
+  color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.1) !important;
+}
+
+.database-action-btn-list.delete:hover {
+  background: rgba(220, 38, 38, 0.15) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Empty State */
+.database-empty-state {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 12px !important;
+  padding: 32px 20px !important;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+body.dark-theme .database-empty-state {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(51, 65, 85, 0.3) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.database-empty-icon {
+  font-size: 48px !important;
+  color: #cbd5e1 !important;
+  margin-bottom: 12px;
+}
+
+body.dark-theme .database-empty-icon {
+  color: #475569 !important;
+}
+
+.database-empty-title {
+  color: #374151 !important;
+  font-weight: 600 !important;
+  margin-bottom: 6px !important;
+  font-size: 1rem !important;
+}
+
+body.dark-theme .database-empty-title {
+  color: #d1d5db !important;
+}
+
+.database-empty-description {
+  color: #6b7280 !important;
+  margin-bottom: 16px !important;
+  font-size: 0.875rem !important;
+}
+
+body.dark-theme .database-empty-description {
+  color: #9ca3af !important;
+}
+
+/* Floating Action Button */
+.database-fab {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3) !important;
+  transition: all 0.3s ease !important;
+  z-index: 1000 !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.database-fab:hover {
+  transform: scale(1.05) translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Dialog Styles */
+.database-dialog .MuiDialog-paper {
+  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+body.dark-theme .database-dialog .MuiDialog-paper {
+  background: rgba(15, 23, 42, 0.98) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.database-dialog-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 16px !important;
+  font-size: 1rem !important;
+}
+
+.database-dialog-content {
+  padding: 20px !important;
+}
+
+.database-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.database-form-field {
+  margin-bottom: 6px !important;
+}
+
+.database-form-field.span-2 {
+  grid-column: span 2;
+}
+
+.database-form-field .MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  background: rgba(248, 250, 252, 0.8) !important;
+  transition: all 0.3s ease !important;
+}
+
+body.dark-theme .database-form-field .MuiOutlinedInput-root {
+  background: rgba(30, 41, 59, 0.8) !important;
+}
+
+.database-dialog-actions {
+  padding: 16px 20px !important;
+  gap: 12px !important;
+  background: rgba(248, 250, 252, 0.5) !important;
+}
+
+body.dark-theme .database-dialog-actions {
+  background: rgba(30, 41, 59, 0.5) !important;
+}
+
+.database-cancel-button {
+  color: #64748b !important;
+  border-color: #cbd5e1 !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  font-size: 0.875rem !important;
+}
+
+.database-submit-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.25) !important;
+  font-size: 0.875rem !important;
+}
+
+.database-submit-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Snackbar */
+.database-snackbar-alert {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .database-container {
+    padding: 12px 0;
+  }
+  
+  .database-header-card {
+    padding: 12px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .database-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .database-controls-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .database-search-field {
+    min-width: auto;
+  }
+  
+  .database-filter-control {
+    min-width: auto;
+  }
+  
+  .database-fab {
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+  
+  .database-form-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .database-form-field.span-2 {
+    grid-column: span 1;
+  }
+  
+  .database-patient-info-list {
+    gap: 8px;
+  }
+  
+  .database-patient-meta-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .database-list-item {
+    padding: 8px 12px !important;
+    min-height: auto;
+  }
+  
+  .database-header-icon {
+    font-size: 20px !important;
+  }
+  
+  .database-title {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .database-header-card {
+    padding: 12px !important;
+  }
+  
+  .database-controls-card {
+    padding: 12px !important;
+  }
+  
+  .database-list-item {
+    padding: 12px !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    min-height: auto;
+  }
+  
+  .database-patient-info-list {
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .database-patient-actions-list {
+    align-self: flex-end;
+    margin-top: 4px;
+  }
+  
+  .database-patient-meta-list {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .database-patient-avatar-list {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .database-dialog-content {
+    padding: 16px !important;
+  }
+  
+  .database-dialog-actions {
+    padding: 12px 16px !important;
+  }
+}

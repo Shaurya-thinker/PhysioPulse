@@ -1,0 +1,9 @@
+{
+  "table": {
+    "name": "Name",
+    "age": "Age",
+    "gender": "Gender",
+    "diagnosis": "Diagnosis",
+    "actions": "Actions"
+  }
+}

@@ -1,0 +1,501 @@
+/* Reports Page Styles */
+.reports-container {
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, var(--accent-color, #764ba2) 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+body.dark-theme .reports-container {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0c29 100%);
+}
+
+/* Header Section */
+.reports-header {
+  margin-bottom: 2rem;
+}
+
+.reports-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reports-header-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reports-header-icon {
+  font-size: 2rem !important;
+  color: #1976d2 !important;
+}
+
+body.dark-theme .reports-header-icon {
+  color: #90caf9 !important;
+}
+
+.reports-title {
+  font-weight: bold !important;
+  color: white !important;
+  margin: 0 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.reports-subtitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Statistics Grid */
+.reports-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.reports-stat-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.reports-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-theme .reports-stat-card {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .reports-stat-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.reports-stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.reports-stat-icon {
+  color: #1976d2;
+  font-size: 2rem;
+}
+
+body.dark-theme .reports-stat-icon {
+  color: #90caf9;
+}
+
+.reports-stat-change {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.reports-stat-change.positive {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.reports-stat-change.negative {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+body.dark-theme .reports-stat-change.positive {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+}
+
+body.dark-theme .reports-stat-change.negative {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #ef5350;
+}
+
+.reports-stat-value {
+  font-weight: bold !important;
+  color: #1f2937 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+body.dark-theme .reports-stat-value {
+  color: white !important;
+}
+
+.reports-stat-title {
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+}
+
+body.dark-theme .reports-stat-title {
+  color: #9ca3af !important;
+}
+
+/* Charts Grid */
+.reports-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .reports-charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Progress Card */
+.reports-progress-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+
+body.dark-theme .reports-progress-card {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.reports-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reports-card-icon {
+  color: #1976d2 !important;
+}
+
+body.dark-theme .reports-card-icon {
+  color: #90caf9 !important;
+}
+
+.reports-card-title {
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+}
+
+body.dark-theme .reports-card-title {
+  color: white !important;
+}
+
+.reports-progress-item {
+  margin-bottom: 1.5rem;
+}
+
+.reports-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.reports-progress-label {
+  font-weight: 500 !important;
+  color: #1f2937 !important;
+}
+
+body.dark-theme .reports-progress-label {
+  color: white !important;
+}
+
+.reports-progress-value {
+  color: #6b7280 !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .reports-progress-value {
+  color: #9ca3af !important;
+}
+
+.reports-progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+body.dark-theme .reports-progress-bar {
+  background-color: #374151;
+}
+
+.reports-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.reports-progress-fill.progress-patients {
+  background-color: #3b82f6;
+}
+
+.reports-progress-fill.progress-recovery {
+  background-color: #10b981;
+}
+
+.reports-progress-fill.progress-treatment {
+  background-color: #f59e0b;
+}
+
+.reports-progress-fill.progress-critical {
+  background-color: #ef4444;
+}
+
+/* Activity Card */
+.reports-activity-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  height: 350px;
+  overflow: hidden;
+}
+
+body.dark-theme .reports-activity-card {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.reports-activity-list {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.reports-activity-empty {
+  color: #6b7280 !important;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+body.dark-theme .reports-activity-empty {
+  color: #9ca3af !important;
+}
+
+.reports-activity-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.reports-activity-item:last-child {
+  border-bottom: none;
+}
+
+body.dark-theme .reports-activity-item {
+  border-bottom-color: #374151;
+}
+
+.reports-activity-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.reports-activity-icon.new-patient {
+  background-color: #3b82f6;
+}
+
+.reports-activity-icon.recovery {
+  background-color: #10b981;
+}
+
+.reports-activity-icon.appointment {
+  background-color: #f59e0b;
+}
+
+.reports-activity-content {
+  flex: 1;
+}
+
+.reports-activity-title {
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+body.dark-theme .reports-activity-title {
+  color: white !important;
+}
+
+.reports-activity-description {
+  color: #6b7280 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+body.dark-theme .reports-activity-description {
+  color: #9ca3af !important;
+}
+
+.reports-activity-time {
+  color: #9ca3af !important;
+}
+
+body.dark-theme .reports-activity-time {
+  color: #6b7280 !important;
+}
+
+/* Overview Grid */
+.reports-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.reports-overview-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.reports-overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-theme .reports-overview-card {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .reports-overview-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.reports-overview-value {
+  font-weight: bold !important;
+  color: #1976d2 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+body.dark-theme .reports-overview-value {
+  color: #90caf9 !important;
+}
+
+.reports-overview-label {
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+}
+
+body.dark-theme .reports-overview-label {
+  color: #9ca3af !important;
+}
+
+/* Scrollbar Styling */
+.reports-activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reports-activity-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.reports-activity-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.reports-activity-list::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+body.dark-theme .reports-activity-list::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+body.dark-theme .reports-activity-list::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+body.dark-theme .reports-activity-list::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reports-container {
+    padding: 1rem;
+  }
+  
+  .reports-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .reports-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .reports-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .reports-header-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Animation for theme transitions */
+.reports-stat-card,
+.reports-progress-card,
+.reports-activity-card,
+.reports-overview-card {
+  transition: all 0.3s ease;
+}
+
+/* Focus states */
+.reports-stat-card:focus,
+.reports-overview-card:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+body.dark-theme .reports-stat-card:focus,
+body.dark-theme .reports-overview-card:focus {
+  outline-color: #90caf9;
+}
