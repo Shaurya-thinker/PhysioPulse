@@ -1,0 +1,338 @@
+/* Patients Page Styles */
+.patients-container {
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, var(--accent-color, #764ba2) 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+body.dark-theme .patients-container {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0c29 100%);
+}
+
+/* Header Section */
+.patients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.patients-title {
+  font-weight: bold !important;
+  color: white !important;
+  margin: 0 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Field */
+.patients-search-field {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+
+.patients-search-field .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.patients-search-field .MuiOutlinedInput-root:hover {
+  background-color: white;
+}
+
+body.dark-theme .patients-search-field .MuiOutlinedInput-root {
+  background-color: rgba(30, 30, 30, 0.95);
+  color: white;
+}
+
+body.dark-theme .patients-search-field .MuiOutlinedInput-root:hover {
+  background-color: #2a2a2a;
+}
+
+body.dark-theme .patients-search-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .patients-search-field .MuiInputBase-input::placeholder {
+  color: #9ca3af;
+}
+
+.patients-search-icon {
+  color: #6b7280 !important;
+}
+
+body.dark-theme .patients-search-icon {
+  color: #9ca3af !important;
+}
+
+.patients-filter-button {
+  color: #6b7280 !important;
+}
+
+body.dark-theme .patients-filter-button {
+  color: #9ca3af !important;
+}
+
+/* Table Container */
+.patients-table-container {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.dark-theme .patients-table-container {
+  background: rgba(30, 30, 30, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Table Header */
+.patients-table-header {
+  background-color: #f5f5f5 !important;
+}
+
+body.dark-theme .patients-table-header {
+  background-color: #374151 !important;
+}
+
+.patients-table-header-cell {
+  font-weight: bold !important;
+  color: #1f2937 !important;
+}
+
+body.dark-theme .patients-table-header-cell {
+  color: white !important;
+}
+
+/* Table Rows */
+.patients-table-row {
+  transition: background-color 0.2s ease !important;
+}
+
+.patients-table-row:hover {
+  background-color: #f8f8f8 !important;
+}
+
+body.dark-theme .patients-table-row:hover {
+  background-color: #374151 !important;
+}
+
+.patients-table-cell {
+  color: #1f2937 !important;
+}
+
+body.dark-theme .patients-table-cell {
+  color: white !important;
+  border-bottom-color: #374151 !important;
+}
+
+/* Condition Chip */
+.patients-condition-chip {
+  background-color: #e3f2fd !important;
+  color: #1976d2 !important;
+  font-weight: 500 !important;
+}
+
+body.dark-theme .patients-condition-chip {
+  background-color: rgba(33, 150, 243, 0.2) !important;
+  color: #90caf9 !important;
+}
+
+/* Status Chips */
+.patients-status-chip {
+  font-weight: 500 !important;
+}
+
+.patients-status-chip.active {
+  background-color: rgba(46, 125, 50, 0.15) !important;
+  color: #2e7d32 !important;
+}
+
+.patients-status-chip.inactive {
+  background-color: rgba(211, 47, 47, 0.15) !important;
+  color: #d32f2f !important;
+}
+
+body.dark-theme .patients-status-chip.active {
+  background-color: rgba(76, 175, 80, 0.2) !important;
+  color: #81c784 !important;
+}
+
+body.dark-theme .patients-status-chip.inactive {
+  background-color: rgba(244, 67, 54, 0.2) !important;
+  color: #ef5350 !important;
+}
+
+/* Table Scrollbar */
+.patients-table-container .MuiTableContainer-root::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.patients-table-container .MuiTableContainer-root::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.patients-table-container .MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.patients-table-container .MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+body.dark-theme .patients-table-container .MuiTableContainer-root::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+body.dark-theme .patients-table-container .MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+body.dark-theme .patients-table-container .MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .patients-container {
+    padding: 1rem;
+  }
+  
+  .patients-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .patients-search-field {
+    width: 100%;
+  }
+  
+  .patients-table-container {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .patients-header {
+    text-align: center;
+  }
+  
+  .patients-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Empty State (if needed for future expansion) */
+.patients-empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+}
+
+body.dark-theme .patients-empty-state {
+  color: #9ca3af;
+}
+
+.patients-empty-icon {
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.patients-empty-title {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.patients-empty-description {
+  font-size: 0.9rem !important;
+  opacity: 0.8;
+}
+
+/* Animation for theme transitions */
+.patients-table-container,
+.patients-search-field,
+.patients-condition-chip,
+.patients-status-chip {
+  transition: all 0.3s ease !important;
+}
+
+/* Focus states */
+.patients-table-row:focus,
+.patients-search-field:focus-within {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+body.dark-theme .patients-table-row:focus,
+body.dark-theme .patients-search-field:focus-within {
+  outline-color: #90caf9;
+}
+
+/* Hover effects for better interactivity */
+.patients-condition-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+}
+
+.patients-status-chip:hover {
+  transform: translateY(-1px);
+}
+
+.patients-status-chip.active:hover {
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.3);
+}
+
+.patients-status-chip.inactive:hover {
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+}
+
+body.dark-theme .patients-condition-chip:hover {
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.4);
+}
+
+body.dark-theme .patients-status-chip.active:hover {
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+body.dark-theme .patients-status-chip.inactive:hover {
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.4);
+}
+
+/* Enhanced search field styling */
+.patients-search-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2 !important;
+  border-width: 2px !important;
+}
+
+body.dark-theme .patients-search-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #90caf9 !important;
+}
+
+/* Table cell padding adjustment for better mobile experience */
+@media (max-width: 600px) {
+  .patients-table-header-cell,
+  .patients-table-cell {
+    padding: 8px 4px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .patients-condition-chip,
+  .patients-status-chip {
+    font-size: 0.7rem !important;
+    height: 20px !important;
+  }
+}

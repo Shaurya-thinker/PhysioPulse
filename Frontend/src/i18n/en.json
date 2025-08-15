@@ -1,0 +1,183 @@
+{
+  "title": "NGO Dashboard",
+  "patients": "Patients",
+  "reports": "Reports",
+  "dashboard": {
+    "greeting": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "welcome": {
+      "title": "Welcome back to NGO Dashboard",
+      "description": "Here's a quick overview of your patient management system. Monitor key metrics, track patient progress, and manage your healthcare services efficiently."
+    },
+    "metrics": {
+      "title": "Key Metrics Overview",
+      "totalPatients": "Total Patients",
+      "activeCases": "Active Cases",
+      "recoveryRate": "Recovery Rate",
+      "criticalCases": "Critical Cases"
+    },
+    "chart": {
+      "title": "Patient Trends Analysis",
+      "admissions": "Admissions",
+      "recoveries": "Recoveries",
+      "today": "Today",
+      "thisMonth": "This Month",
+      "noData": {
+        "title": "No Real Data Available",
+        "admissionDescription": "Patient admission data will appear here once you start adding patients to your system.",
+        "recoveryDescription": "Patient recovery data will appear here once recovery records are available in your database.",
+        "instructions": "To see charts:",
+        "steps": [
+          "Connect your database with patient records",
+          "Add patients through the Patients page",
+          "Update patient status for recovery tracking",
+          "Charts will automatically populate with real data"
+        ]
+      },
+      "overlay": {
+        "noAdmissions": "No patient admissions recorded",
+        "noRecoveries": "No patient recoveries recorded"
+      },
+      "stats": {
+        "max": "Max",
+        "min": "Min",
+        "total": "Total"
+      }
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "viewPatients": "View All Patients",
+      "addPatient": "Add New Patient",
+      "viewReports": "View Reports",
+      "manageDatabase": "Manage Database"
+    }
+  },
+  "reportsPage": {
+    "title": "Reports & Analytics",
+    "subtitle": "Comprehensive reports and data analytics for better insights",
+    "stats": {
+      "totalPatients": "Total Patients",
+      "activeCases": "Active Cases",
+      "recoveryRate": "Recovery Rate",
+      "criticalCases": "Critical Cases"
+    },
+    "departmentOverview": {
+      "title": "Department Overview",
+      "patientRegistration": "Patient Registration",
+      "recoveryProgress": "Recovery Progress",
+      "treatmentCompletion": "Treatment Completion",
+      "criticalCases": "Critical Cases"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "noActivities": "No recent activities"
+    },
+    "overview": {
+      "appointmentsToday": "Appointments Today",
+      "therapistsAvailable": "Therapists Available",
+      "treatmentsCompleted": "Treatments Completed",
+      "patientSatisfaction": "Patient Satisfaction"
+    }
+  },
+  "database": {
+    "title": "Patient Database Management",
+    "subtitle": "Manage patient records with ease - Add, edit, or remove patient information",
+    "search": {
+      "placeholder": "Search by name, condition, or phone...",
+      "results": "Showing {{count}} of {{total}} patients",
+      "noResults": "No patients found matching your criteria"
+    },
+    "filters": {
+      "statusLabel": "Status Filter",
+      "allStatus": "All Status",
+      "active": "Active",
+      "inactive": "Inactive",
+      "critical": "Critical",
+      "recovered": "Recovered"
+    },
+    "table": {
+      "headers": {
+        "name": "Patient Name",
+        "age": "Age",
+        "gender": "Gender",
+        "condition": "Medical Condition",
+        "status": "Status",
+        "phone": "Phone",
+        "dateAdmitted": "Date Admitted",
+        "actions": "Actions"
+      },
+      "empty": "No patients in database yet",
+      "emptyDescription": "Start by adding your first patient record"
+    },
+    "actions": {
+      "add": "Add New Patient",
+      "edit": "Edit Patient",
+      "delete": "Delete Patient",
+      "view": "View Details",
+      "export": "Export Data",
+      "import": "Import Data"
+    },
+    "dialog": {
+      "addTitle": "Add New Patient",
+      "editTitle": "Edit Patient Information",
+      "deleteTitle": "Delete Patient Record",
+      "deleteMessage": "Are you sure you want to delete this patient record? This action cannot be undone.",
+      "fields": {
+        "name": "Full Name",
+        "nameRequired": "Full Name *",
+        "age": "Age",
+        "ageRequired": "Age *",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "condition": "Medical Condition",
+        "conditionRequired": "Medical Condition *",
+        "status": "Status",
+        "phone": "Phone Number",
+        "address": "Address",
+        "dateAdmitted": "Date Admitted",
+        "treatmentPlan": "Treatment Plan",
+        "emergencyContact": "Emergency Contact",
+        "bloodType": "Blood Type",
+        "allergies": "Allergies",
+        "medications": "Current Medications"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "update": "Update",
+        "delete": "Delete",
+        "add": "Add Patient"
+      }
+    },
+    "messages": {
+      "addSuccess": "Patient added successfully",
+      "updateSuccess": "Patient updated successfully",
+      "deleteSuccess": "Patient deleted successfully",
+      "addError": "Failed to add patient",
+      "updateError": "Failed to update patient",
+      "deleteError": "Failed to delete patient",
+      "validationError": "Please fill in all required fields",
+      "phoneError": "Please enter a valid phone number",
+      "ageError": "Please enter a valid age"
+    },
+    "stats": {
+      "total": "Total Patients",
+      "active": "Active Cases",
+      "inactive": "Inactive Cases",
+      "critical": "Critical Cases",
+      "thisMonth": "Added This Month",
+      "lastUpdated": "Last Updated"
+    },
+    "patientNames": {
+      "1": "Amit Sharma",
+      "2": "Sita Devi",
+      "3": "Rajesh Kumar",
+      "default": "John Doe"
+    }
+  }
+}
