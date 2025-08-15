@@ -37,4 +37,4 @@ mypy==1.7.1
 structlog==23.2.0
 
 # Security
-cryptography==41.0.8
+cryptography==40.0.2
